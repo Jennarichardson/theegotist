@@ -1,0 +1,397 @@
+/* You may set the width and height of container/section elements in percentages. 
+DO NOT USE PERCENTAGES IN TEXTS AND IMAGES : No responsiveness  */
+
+html,body {
+	width: 100%;
+	height: 1500px;
+}
+
+body {
+	background: none;
+}
+
+@keyframes fade{
+	0%{ opacity: 0;}
+	100% { opacity: 1;}
+}
+
+@keyframes move {
+	0% { top: 300px; left: 2050px; }
+	100% { top: 300px; left: 1150px; }
+}
+
+@keyframes move_1 {
+	0% { left: -650px; }
+	100% { top: 650px; left: 85px; }
+}
+
+@keyframes move_2 {
+	0% { top: -650px; }
+	100% { top: 0px; }
+}
+
+@keyframes move_3 {
+	0% { top: 430px; left: 0px; }
+	100% { top: 430px;  left: 400px}
+}
+
+
+#container {
+	width: 100%;
+	height: 100%;
+}
+
+#navigation {
+	background: #FE4527;
+	width: 100%;
+	height: 50px; 
+	position: fixed;
+	z-index: 1;
+}
+
+
+
+.logo {
+	font-family: "bd-viewmaster";
+	font-size: 2em;
+	color: white;
+	left: 100px;
+	top: 9px;
+	position: absolute;
+
+}
+
+.button{
+	position: relative;
+	left: 70%;
+	top: 15px;
+	font-family: "rift";
+	font-weight: 600;
+	font-size: 14pt;
+	color: #FADDD9;
+	display: inline;
+	margin-left: 20px;
+	
+}
+
+.button:hover {
+	background-color:black;
+}
+#newsroom {
+	position: absolute;
+	left: 85px;
+	top: 650px;
+	animation: move_1 2s;
+}
+
+a.a_news:hover {
+	position: absolute;
+	left: 55px;
+}
+
+
+#bottomnav {
+	position: fixed;
+	bottom: 0px;
+	z-index: 2;
+	width: 100%;
+	height:50px;
+	background: none;
+
+}
+.header {
+	z-index: 1;
+	position: relative;
+	color: #FE4527;
+	font-family: "rift";
+	font-size: 10pt;
+	font-weight: 600;
+	display: inline;
+	margin-left: 100px;
+	top: 20px;
+}
+
+.header:hover{
+	background-color: #E3DFE1;
+}
+#subheader {
+	position: absolute;
+	color: black;
+	font-family: "rift";
+	font-weight: 600;
+	font-style: italic;
+	bottom: 15px;
+	left: 70%;
+	font-size: 10pt; 
+	margin-right: 100px;
+	z-index: 1;
+
+}
+
+#subheader:hover{
+	color: grey;
+	font-size: 22pt;
+}
+
+.one {
+	background: url(../images/1_1.jpg) center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.two {
+	background: url(../images/2_2.jpg) center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.three {
+	background: url(../images/3_3.jpg) center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.four {
+	background: url(../images/4_4.jpg) center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.five {
+	background: url(../images/5.png) center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.six {
+	background: url(../images/6.jpg) center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#slides {
+	display: none;
+	position: fixed;
+	width: 60%;
+	top: 100px;
+	background: none;
+	margin-left: 550px;
+	animation: fade 3s;
+
+}
+
+.panel {
+	position: relative;
+	width: 30%;
+	height: 100%;
+}
+
+.slidesjs-pagination {
+	list-style: none;
+	position: absolute;
+	left: 45%;
+	bottom: 30px;
+	z-index: 10;
+}
+
+.slidesjs-pagination li {
+	display: inline-block;
+}
+
+.slidesjs-pagination li a{
+	display: block;
+	width: 13px;
+	height: 13px;
+	background-image: url(../images/nav.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	/*overflow: hidden;*/
+	color: transparent;
+	margin-right: 20px;
+}
+
+.slidesjs-pagination li a:hover {
+	background-position: 0 -13px;
+}
+.slidesjs-pagination li a.active, 
+.slidesjs-pagination li a:hover.active {
+	background-position: 0 -26px;
+}
+
+.slidesjs-next {
+	font-family: "rift";
+	color: grey;
+	margin-left: 10px;
+	display: none;
+}
+
+.slidesjs-previous {
+	font-family: "rift";
+	color: grey;
+	display: none;
+
+}
+
+
+.article {
+	width: 400px;
+	height:500px;
+	position: fixed;
+	left: 1150px;
+	top: 300px;
+	animation: move 2s;
+	z-index: 1;
+}
+
+#title{
+	font-family: "bd-viewmaster";
+	font-size: 30pt;
+	font-weight: 600;
+	margin-bottom: 15px;
+
+}
+
+#content{
+	font-family: "mrs-eaves";
+}
+
+.imagesection {
+	margin-left: 20px;
+	top: 70px;
+	position: absolute;
+	animation:  fade 3s;
+	animation-fill-mode: forwards;
+
+}
+
+#image1 {
+	margin-bottom: 15px;
+}
+
+#image2 {
+	margin-bottom: 15px;
+}
+
+#image3 {
+	margin-bottom: 15px;
+}
+
+#image4 {
+	margin-bottom: 15px;
+}
+
+#image5 {
+	margin-bottom: 15px;
+}
+
+#image6 {
+	margin-bottom: 40px;
+}
+
+
+a.a_one:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.a_one:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.a_one:hover {
+	font-size: 110%;
+	color: black;
+	text-decoration: none;
+}
+
+a.a_two:link{
+	color: #FE4527;
+	text-decoration: none;
+}
+
+a.a_two:visited{
+	color: #FE4527;
+	text-decoration: none;
+}
+
+a.a_two:hover{
+	color: #E3DFE1;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.aboutus {
+	width: 900px;
+	height: 1000px;
+	position: absolute;
+	top: 430px;
+	left: 400px;
+	animation: fade 2s;
+	z-index: -5;
+	
+}
+
+#abouttitle{
+	font-family: "bd-viewmaster";
+	font-size: 60pt;
+	font-weight: 600;
+	margin-bottom: 15px;
+
+
+}
+
+#aboutcontent {
+	font-family:"mrs-eaves";
+	font-size: 14pt;
+	animation: fade 2s;
+}
+
+a.a_three:link {
+	text-decoration: none;
+	color: #FE4527;
+}
+
+a.a_three:visited {
+	text-decoration: none;
+	color: #FE4527;
+}
+
+a.a_three:hover {
+	text-decoration: none;
+	color: black;
+	font-size: 150%;
+}
+
+a.a_three:active {
+	background-color: black;
+	color: #FFFFFF;
+	font-size: 150%;
+}
+
+.news_image {
+	width: 100%;
+	height: 400px;
+	background: url(../images/newspaper.jpg) center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	animation: move_2 2s;
+	z-index: -10;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<!-- CSS Files -->
+		<link rel="stylesheet" href="https://use.typekit.net/djm2eoz.css">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/p2.css" />
+
+		<!-- All Javascript/jQuery Files-->
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+		<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+		
+		
+
+		<script type="text/javascript" src="js/script.js"></script>
+
+		<script type="text/javascript" src="js/slideshow.js"></script>
+
+		<script type="text/javascript" src="js/parallax.js"></script>
+
+		
+	
+		<title>The Egotist</title>
+	
+	</head>
+
+	<body>
+
+		<div id="container">
+<!-- Navbar-->
+			<div id="navigation">
+				<div class="logo">the egotist</div>
+				<div class="button">jobs</div>
+					<!--link to new html page-->
+				<div class="button" >talent</div>
+				<div class="button">membership</div>
+				<div class="button">forum</div>
+				<div class="button">submit</div>
+				
+
+			</div> 
+
+			<a class="a_news" href="P2_Zeus.html">
+				<img id="newsroom" src="images/checkthisout.png"> 
+			</a>
+			<div id="subheader">IF YOU HAVE MPLS ADVERTISING OR DESIGN NEWS, LET US KNOW.</div>
+				
+				<!--I can't seem to get paralax to work?-->	
+
+				<script>
+					var scene = $('#newsroom').get(0);
+					var parallaxInstance = new Parallax(scene, {
+						relativeInput: true,
+						pointerEvents: true,
+						hoverOnly: false,
+
+						invertX: true,
+						invertY: true,
+
+						frictionX: 1,
+						frictionY: 0.5,
+
+						originX: 0.5,
+						originY: 0.5,
+
+						limitX: true,
+						limitY: true,
+
+						scalarX: 1,
+						scalarY: 1
+
+					});
+
+				</script>
+
+<!-- newsroom-->
+			
+			<div id="slides">
+				<div class="panel one"> </div>
+		    	<div class="panel two"> </div>
+		    	<div class="panel three"> </div>
+		    	<div class="panel four"> </div>
+		    	<div class="panel five"> </div>
+		    	<div class="panel six"> </div>
+
+
+			</div> 
+<!-- bottom Navbar-->
+			<div id="bottomnav">
+			
+				<div class="header" id="bottomcontent">
+					<a class="a_three" href="P2_about.html">About</a>
+				</div>
+				<div class="header" id="bottomcontent">Become a Member</div>
+				<div class="header" id="bottomcontent">Upcoming Events</div>
+				<div class="header" id="bottomcontent">Contact</div>
+			</div>
+
+
+		</div> <!-- End of container -->
+
+	</body>
+
+
+
+
+</html>
